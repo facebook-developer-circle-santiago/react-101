@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+      body {
+        background: #F5F8FA;
+        color: #000000;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+      }
+      .btn span {
+        margin-right: 5px;
+      }
+
+      .twitter-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .tweet-container {
+        background: #FFFFFF;
+        border-left: 1px solid #e1e8ed;
+        border-right: 1px solid #e1e8ed;
+        background-clip: padding-box;
+      }
+      .tweet-container:hover {
+        background: #F5F8FA;
+      }
+      .tweet-container .tweet {
+        border-bottom: 1px solid #e1e8ed;
+        cursor: pointer;
+        position: relative;
+        min-height: 51px;
+        padding: 9px 12px;
+        display: flex;
+        flex-direction: row;
+      }
+      .tweet-container .tweet .tweet-image img {
+        height: 75px;
+      }
+      .tweet-container .tweet .tweet-content {
+        margin-left: 10px;
+      }
+      .tweet-container .tweet .tweet-content .tweet-line {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .tweet-container .tweet .tweet-content .tweet-line small {
+        margin-left: 10px;
+      }
+
+      .tweet-form {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 20px;
+        background-color: #ECF4EB;
+        border-radius: 5px 5px 0 0;
+        border: 1px solid #e1e8ed;
+      }
+      .tweet-form .tweet-text {
+        resize: none;
+        min-height: 50px;
+        border-color: #D1E3CE;
+        border-radius: 3px 3px 0 0;
+      }
+      .tweet-form .tweet-text:focus {
+        border-color: #D1E3CE;
+        outline: 0 none;
+      }
+
+      .tweet-form-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 10px;
+      }
+
+      .icon-button {
+        max-width: 100px;
+        width: 20%;
+        font-weight: bold;
+        padding: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .tweet-list {
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="twitter-container">
+        <div class="tweet-form">
+          <textarea class="tweet-text" placeholder="What's up?"></textarea>
+          <div class="tweet-form-actions">
+            <div class="btn btn-primary icon-button">
+              <span class="glyphicon glyphicon-pencil"></span>
+              Tweet
+            </div>
+          </div>
+        </div>
+        <div class="tweet-list">
+          <div class="tweet-container">
+            <div class="tweet">
+              <div class="tweet-image"><img src="http://placehold.it/100/100" alt="Tweet pic"></div>
+              <div class="tweet-content">
+                <div class="tweet-line"><strong>Username</strong><small>13m</small></div>
+                <div class="tweet-line">Sigue su recuperación: jugador de Chapecoense Helio Neto vuelve a caminar tras accidente.</div>
+              </div>
+            </div>
+          </div>
+          <div class="tweet-container">
+            <div class="tweet">
+              <div class="tweet-image"><img src="http://placehold.it/100/100" alt="Tweet pic"></div>
+              <div class="tweet-content">
+                <div class="tweet-line"><strong>Username</strong><small>13m</small></div>
+                <div class="tweet-line">Sigue su recuperación: jugador de Chapecoense Helio Neto vuelve a caminar tras accidente.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
