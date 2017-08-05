@@ -1,0 +1,15 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.btn {
+  display: flex;
+  justify-content: center;
+
+  span {
+    margin-right: 5px;
+  }
+}
+
+body {
+  background: #F5F8FA;
+  color: #000000;
+}

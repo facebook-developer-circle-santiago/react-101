@@ -1,0 +1,40 @@
+.tweet-container {
+  background: #FFFFFF;
+  border-left: 1px solid #e1e8ed;
+  border-right: 1px solid #e1e8ed;
+  background-clip: padding-box;
+
+  &:hover {
+    background: #F5F8FA
+  }
+
+  .tweet {
+    border-bottom: 1px solid #e1e8ed;
+    cursor: pointer;
+    position: relative;
+    min-height: 51px;
+    padding: 9px 12px;
+    display: flex;
+    flex-direction: row;
+
+    .tweet-image {
+      img {
+        height: 75px;
+      }
+    }
+
+    .tweet-content {
+      margin-left: 10px;
+
+      .tweet-line {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        small {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
